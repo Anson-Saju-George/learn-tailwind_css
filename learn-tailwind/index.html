@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn-tailwind</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="bg-slate-900 text-white flex flex-col min-h-screen">
+  <!-- bg-slate-900: background color, text-white: text color,
+  flex flex-col min-h-screen: flexbox layout with column direction
+  and minimum height of screen -->
+    <!-- Navbar -->
+    <div class="rounded-lg bg-slate-300 m-4 p-4 justify-between items-center flex flex-row">
+    <h1 class="text-3xl font-bold text-blue-900">Hello, <span class="text-green-900">Tailwind CSS!</span>
+    </h1>
+    <nav class="flex gap-4">
+      <a href="#" class="text-blue-800 px-3 py-2 rounded font-semibold">Home</a>
+      <a href="#" class="text-blue-800 px-3 py-2 rounded font-semibold">About</a>
+      <a href="#" class="text-blue-800 px-3 py-2 rounded font-semibold">Contact</a>
+    </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="flex-grow">
+      <!-- Seperating Content & Footer from Navbar to get flex-grow working. Must init parent class with flex and flex-col -->
+    <div>
+      <section class="text-white p-6 rounded-lg shadow-md m-4 border-[5px] border-slate-600 bg-slate-800">
+        <h2 class="text-2xl mx-4 my-2 italic">Welcome</h2>
+        <p>This is a simple Tailwind CSS example.</p>
+        <p class="font-semibold text-[2.5vmin] text-center text-red-500 sm:text-yellow-500 md:text-green-500 lg:text-blue-500 xl:text-purple-500">This para changes color based on screen size.</p>
+      </section>
+      <section class="text-white p-6 rounded-lg shadow-md m-4 border-[5px] border-slate-600 bg-slate-800">
+        <h2 class="text-2xl mx-4 my-2 italic">Features</h2>
+        <!-- md:grid-cols-3 lg:grid-cols-4 makes the grid responsive to different screen sizes -->
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          <div class="bg-teal-800 p-2 rounded">Feature  1</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  2</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  3</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  4</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  5</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  6</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  7</div>
+          <div class="bg-teal-800 p-2 rounded">Feature  8</div>
+        </div>
+      </section>
+    </div>
+
+    </div>
+
+    <div class="bg-slate-700 text-center p-4 rounded m-4 text-center text-xs">&copy; 2026 ASG Portfolio. All rights reserved</div>
+
+
+
+    <div id="app"></div>
+  </body>
+</html>
